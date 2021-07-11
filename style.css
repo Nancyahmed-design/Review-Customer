@@ -1,0 +1,116 @@
+*{
+    box-sizing: border-box;
+    font-family: 'Uchen', serif;
+    margin:0;
+    padding:0;
+}
+.page{
+    width:100%;
+    height:100vh;
+    background:#ceb4d3;
+    display:flex;
+    flex-direction: column;
+    align-items:center;
+    justify-content: center;
+
+
+}
+h2{
+    font-size: 28px;
+    position: relative;
+    margin-bottom: 30px;
+}
+h2::after{
+    content: "";
+    width: 210px;
+    height: 4px;
+    background: linear-gradient(to right,#9c13c2,#a638c5,#ae74be);
+    position: absolute;
+    bottom:-10px;
+    left:50%;
+    transform: translateX(-50%);
+}
+.container{
+    width:90%;
+    max-width: 700px;
+    height:300px;
+    border-radius: 10px;
+    box-shadow: -10px 10px 40px rgba(0,0,0,0.25);
+    position:relative; 
+    overflow: hidden;
+}
+.card{
+    height: 300px;
+    padding: 40px;
+    color:black;
+    line-height: 22px;
+    box-sizing: border-box;
+    background: #fff;
+    position: relative;
+    z-index: 1;
+}
+
+.card::before{
+    content: "";
+    width: 110px;
+    height: 110px;
+    border-bottom-right-radius: 100%;
+    /* border: 2px solid transparent;
+    border-radius: 50%; */
+    background: #ae74be;
+    position: absolute;
+    top:0;
+    left:0;
+    z-index: -1;
+    overflow: hidden;
+
+}
+.info{
+    display: flex;
+    align-items: center;
+    margin-bottom: 40px;
+
+}
+.info img{
+     width: 70px;
+     border-radius: 50%;
+     margin-right: 20px;
+}
+.info h3{
+    font-size: 26px;
+    margin-bottom: 8px;
+}
+#slider{
+    width:100%;
+    padding-right: 60px;
+    box-sizing: border-box;
+    position: absolute;
+    top:0;
+    left:0;
+    transition: 0.5s;
+
+}
+
+.control-buttons{
+    width: 60px;
+    height: 100%;
+    padding:15px 0;
+    box-sizing: border-box;
+    background-color:#ae74be ;
+    position: absolute;
+    right:0;
+    top:0;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.control-buttons i{
+    font-size: 36px;
+    
+    cursor: pointer;
+}
+::selection{
+    background: #ce9ad8;
+}
